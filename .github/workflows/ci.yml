@@ -1,0 +1,6 @@
+steps:
+  - id: upload-files
+    uses: google-github-actions/upload-cloud-storage@main
+    with:
+      path: ./
+      destination: www.juangro.com
