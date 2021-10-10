@@ -9,12 +9,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - id: upload-files
+        name: Deploy to www.juangro.com
         uses: google-github-actions/upload-cloud-storage@main
         with:
           credentials: ${{ secrets.GCP_KEY }}
           path: .
           destination: www.juangro.com
       - id: upload-files
+        name: Deploy to ing.juangro.com
         uses: google-github-actions/upload-cloud-storage@main
         with:
           credentials: ${{ secrets.GCP_KEY }}
