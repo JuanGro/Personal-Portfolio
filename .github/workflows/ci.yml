@@ -13,7 +13,3 @@ jobs:
           credentials: ${{ secrets.GCP_KEY }}
           path: ./index.html
           destination: www.juangro.com/index.html
-      - id: uploaded-files
-        uses: foo/bar@master
-        env:
-          file: ${{steps.upload-file.outputs.uploaded}}
