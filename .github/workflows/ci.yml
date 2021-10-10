@@ -13,4 +13,4 @@ jobs:
         with:
           credentials: ${{ secrets.GCP_KEY }}
           path: ./index.html
-          destination: www.juangro.com/index.html
+          destination: www.juangro.com
